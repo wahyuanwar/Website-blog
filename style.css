@@ -1,0 +1,515 @@
+/* --- DAPUR ANDARA STYLE V3.7: Navigasi Desktop Tetap Terlihat & Style Flowchart List --- */
+
+/* Styling Dasar (Reset & Font) */
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0f8ff; 
+    color: #333;
+}
+
+/* Header dan Navigasi */
+header {
+    background-color: #008080; /* Teal */
+    color: white;
+    padding: 15px 40px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.logo {
+    font-size: 1.6em; 
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* DEFAULT DESKTOP: Display Flex (Horizontal) */
+    display: flex; 
+    gap: 15px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #66CDAA; /* Medium Aquamarine */
+}
+
+.nav-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+/* Bagian Hero (Beranda) - Posisi Teks di KANAN BAWAH */
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover; 
+    color: white;
+    /* Ubah alignment menjadi ke kanan */
+    text-align: right; 
+    padding: 200px 40px 100px 40px; 
+    min-height: 500px; 
+    display: flex;
+    flex-direction: column;
+    /* KUNCI: Posisikan konten flex di kanan dan bawah */
+    justify-content: flex-end; 
+    align-items: flex-end; /* Pastikan konten rata kanan */
+    position: relative;
+    z-index: 1; 
+}
+
+/* Overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Opacity dikurangi agar foto terlihat jelas */
+    background-color: rgba(0, 0, 0, 0.45); 
+    z-index: -1;
+}
+
+.hero h1 {
+    /* Font seperti Restoran Garuda (Dancing Script) */
+    font-family: 'Dancing Script', cursive; 
+    font-size: 5.5em; 
+    font-weight: 700;
+    margin-top: 0; 
+    margin-bottom: 5px; /* Jarak dibuat rapat */
+    
+    color: white; /* Putih bersih */
+    /* Meniru efek 3D shadow ala Garuda */
+    text-shadow: 
+        1px 1px 0 #000, 
+        2px 2px 0 #000,
+        3px 3px 0 #000,
+        4px 4px 10px rgba(0,0,0,0.8); 
+    line-height: 1.1; 
+}
+
+.hero p {
+    /* Font pendukung yang lebih bersih (Poppins) */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6em; 
+    font-weight: 400; 
+    color: white; 
+    margin-top: 5px;
+    margin-bottom: 30px; 
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1.0);
+}
+
+/* Tombol CTA (Lihat Menu) */
+.cta-button {
+    display: inline-block;
+    background-color: #66CDAA; 
+    color: #333; 
+    padding: 14px 40px; 
+    text-decoration: none;
+    border-radius: 50px; 
+    margin-top: 15px; 
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 128, 128, 0.4); 
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #008080; 
+    color: white;
+    box-shadow: 0 6px 15px rgba(0, 128, 128, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Bagian Konten Umum (Section) */
+section {
+    padding: 60px 40px; 
+    text-align: center;
+}
+
+/* JUDUL BAGIAN (H2) */
+section h2 {
+    font-family: 'Oswald', sans-serif; 
+    color: #008080; 
+    margin-bottom: 40px; 
+    font-size: 2.8em; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    border-bottom: 4px solid #66CDAA; 
+    display: inline-block; 
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/* Blog Preview */
+.blog-preview {
+    background-color: #ffffff; 
+    padding-bottom: 60px;
+}
+
+.blog-post {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
+}
+
+/* Preview Menu */
+.menu-preview {
+    background-color: #e6f7f7; 
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1300px; 
+    margin: 0 auto;
+}
+
+.menu-card {
+    background-color: white;
+    border: none; 
+    border-radius: 12px; 
+    padding: 20px;
+    width: 280px; 
+    flex-basis: 300px; 
+    text-align: center; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); 
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px) scale(1.03); 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2); 
+}
+
+.menu-card img {
+    width: 100%; 
+    height: 180px; 
+    object-fit: contain; 
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* JUDUL KARTU MENU (H3) */
+.menu-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em; 
+    font-weight: 600;
+    color: #333; 
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Harga Menu */
+.menu-card .price {
+    font-size: 1.2em; 
+    color: #008080; 
+    font-weight: 700; 
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 25px; 
+    background-color: #e6fffa; 
+    display: inline-block;
+    letter-spacing: 0.8px;
+}
+
+
+/* --- Styling Analisis SWOT --- */
+.swot-section {
+    padding: 80px 40px; 
+    background-color: #ffffff; 
+}
+
+.swot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+}
+
+.swot-item {
+    padding: 25px;
+    border-radius: 15px; 
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out; 
+}
+
+.swot-item:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+}
+
+.swot-item h3 {
+    font-family: 'Oswald', sans-serif; 
+    font-size: 1.6em; 
+    padding-bottom: 10px;
+    border-bottom: 3px solid;
+    margin-bottom: 15px;
+}
+
+/* Pewarnaan Kategori SWOT */
+.strength { background-color: #F0FFF0; } 
+.strength h3 { color: #2E8B57; border-color: #2E8B57; } 
+
+.weakness { background-color: #FFFACD; } 
+.weakness h3 { color: #FFD700; border-color: #FFD700; } 
+
+.opportunity { background-color: #F0F8FF; } 
+.opportunity h3 { color: #1E90FF; border-color: #1E90FF; } 
+
+.threat { background-color: #FFF0F5; } 
+.threat h3 { color: #DC143C; border-color: #DC143C; } 
+
+
+/* --- Styling Toggle Button & Flowchart/Roadmap --- */
+.toggle-button {
+    display: inline-block;
+    background-color: #008080; 
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px; 
+    font-size: 1.1em;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(0, 128, 128, 0.3);
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.toggle-button:hover {
+    background-color: #66CDAA; 
+}
+
+.flowchart-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border: 3px solid #66CDAA; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.large-diagram-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Styling 4 Flowchart (Grid) --- */
+.multi-flow-section {
+    padding: 80px 40px;
+    background-color: #f0f0f0; 
+}
+
+.flow-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flow-card {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.flow-card h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #008080; 
+    font-size: 1.6em;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px dashed #66CDAA; 
+}
+
+/* --- Kontak & Footer --- */
+.contact-short {
+    padding-bottom: 80px;
+    background-color: #ffffff;
+}
+
+.contact-short p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.contact-short a {
+    color: #008080 !important; 
+    font-weight: 600;
+}
+
+.blog-post .read-more-toggle {
+    color: #008080; 
+    font-weight: 700;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #1f1f1f; 
+    padding: 30px 0;
+    margin-top: 0;
+}
+
+.social-links a {
+    color: #66CDAA; 
+    font-size: 1.1em;
+    padding: 0 5px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #E0FFFF;
+}
+
+/* --- CSS untuk Fungsi Toggle (Menyembunyikan Konten) --- */
+
+/* Menyembunyikan konten blog 'Baca Selengkapnya' secara default */
+.hidden-full-text {
+    display: none;
+}
+
+/* Transisi untuk konten yang di-toggle */
+.toggle-content {
+    display: block; 
+    transition: max-height 0.7s ease-out, opacity 0.5s ease;
+    overflow: hidden;
+    opacity: 1;
+    max-height: 5000px; 
+}
+
+.toggle-content-hidden {
+    /* Status tersembunyi */
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* --- Penyesuaian Detail Flowchart (BARU) --- */
+.flow-card .flow-description {
+    text-align: left; /* Pastikan teks deskripsi rata kiri */
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 0.95em;
+}
+
+.flow-card .flow-description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.flow-card .flow-description li {
+    margin-bottom: 5px;
+}
+
+
+/* Media Queries (Responsiveness) */
+@media (max-width: 768px) {
+    header { 
+        padding: 10px 20px; 
+        /* Pastikan header menggunakan flex untuk menampung logo dan tombol toggle */
+        flex-wrap: wrap; 
+    }
+    
+    .nav-toggle { 
+        display: block; 
+        z-index: 100; 
+    }
+
+    /* KUNCI PERBAIKAN: MENYEMBUNYIKAN NAVIGASI HANYA DI MOBILE */
+    #main-nav {
+        width: 100%; /* Ambil lebar penuh */
+        order: 10; /* Pastikan menu muncul di bawah logo dan tombol toggle */
+        display: block; 
+        max-height: 0; /* Sembunyikan secara default */
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+    }
+    
+    #main-nav.active {
+        max-height: 300px; /* Tampilkan menu saat aktif */
+    }
+
+    nav ul {
+        flex-direction: column; /* Tampilkan menu secara vertikal */
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+
+    /* END KUNCI PERBAIKAN */
+    
+    .hero {
+        /* Posisikan teks di tengah bawah di mobile agar tidak menutupi */
+        padding: 100px 20px 50px 20px; 
+        min-height: 400px;
+        align-items: center; /* Kembali ke tengah di mobile */
+        text-align: center;
+    }
+    
+    .hero h1 { 
+        font-size: 3.5em; 
+    } 
+
+    .hero p {
+        font-size: 1.2em; 
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+    
+    section h2 {
+        font-size: 2em; 
+        margin-bottom: 30px;
+    }
+
+    .menu-items {
+        gap: 20px;
+    }
+    .menu-card { 
+        width: 100%; 
+        max-width: 350px; 
+        margin: 0 auto 20px auto; 
+        flex-basis: auto; 
+    }
+    
+    .swot-grid, .flow-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .cta-button {
+        padding: 12px 30px;
+    }
+}

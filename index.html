@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dapurandara20 - Blog & Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Dapur Andara</div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#menu">Menu</a></li> 
+                <li><a href="#flowcharts">Proses</a></li>
+                <li><a href="#swot-analysis">SWOT</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                 <li><a href="#" class="nav-link" data-section="strategi">Strategi Development</a></li>
+        <li><a href="#" class="nav-link" data-section="aktivis">Digital Business Value Activist</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </header>
+
+    <main>
+        <section id="beranda" class="hero">
+            <h1>Selamat Datang di Dapur Andara</h1>
+            <p>Menyediakan masakan dengan cita rasa rumahan.</p>
+            <a href="#menu" class="cta-button">Lihat Menu</a>
+        </section>
+
+        <section id="blog" class="blog-preview">
+            <h2>📝 Cerita Dapur Andara</h2>
+            
+            <article class="blog-post">
+                <h3>Pengantar</h3>
+                <p>
+                    Di halaman blog ini kami membagikan cerita dan informasi dari Dapur Andara yaitu UMKM olahan makanan yang menyajikan mie siram kuah coto dengan cita rasa otentik. Selain menu utama, Dapur Andara juga menyediakan berbagai menu pendamping dengan harga yang terjangkau.
+                    <span id="blog1-full" class="hidden-full-text">
+                        Usaha ini hadir untuk memenuhi kebutuhan masyarakat sekitar khususnya di wilayah Jl. Pancasila Utara akan makanan yang lezat, praktis, dan ramah di kantong.
+                        Setiap harinya bumbu selalu diolah secara segar, di mana pada malam hari bumbu disiapkan terlebih dahulu lalu pada pagi hari bumbu langsung dimasak agar ketika disantap memberikan rasa nikmat dan konsisten. Bahan baku yang dipilih juga yang berkualitas dipilih langsung oleh pemilik agar dapat terus mempertahankan ciri khas masakannya.
+                        Pemiliknya yang bernama Maya telah berbagi informasi seputar produk, proses pembuatan, dan aktivitas usaha yang dilakukannya sehingga blog ini dapat ditulis untuk memenuhi kewajiban akan tugas kuliah kami. Kami sangat berterima kasih atas setiap informasi kecil yang diberikan oleh pemilik, semoga dengan adanya blog ini mampu menarik minat banyak orang untuk datang ke Dapur Andara.
+                         
+                    </span>
+                </p>
+                <button class="read-more-toggle" data-target="blog1-full">Baca Selengkapnya</button>
+            </article>
+            
+        </section>
+
+        <section id="menu" class="menu-preview">
+            <h2>🥘 Menu Makanan </h2>
+            <div class="menu-items">
+                
+                <div class="menu-card">
+                    <img src="images/mie-siram.jpg" alt="Mie Siram Kuah Coto">
+                    <h3>Mie Siram Kuah Coto</h3>
+                    <p>Mie instan dengan siraman kuah kental khas Coto Makassar yang kaya rempah.</p>
+                    <p class="price">Harga: Rp 10.000</p>
+                </div>
+                
+                <div class="menu-card">
+                    <img src="images/indomie-soto.jpg" alt="Indomie Soto">
+                    <h3>Indomie Soto</h3>
+                    <p>Mie instan kuah rasa soto dengan taburan bawang goreng dan sambal.</p>
+                    <p class="price">Harga: Rp 10.000</p>
+                </div>
+                <div class="menu-card">
+                    <img src="images/indomie-goreng.jpg" alt="Indomie Goreng">
+                    <h3>Indomie Goreng Original</h3>
+                    <p>Mie goreng legendaris dengan bumbu otentik dan kriuk.</p>
+                    <p class="price">Harga: Rp 10.000</p>
+                </div>
+                <div class="menu-card">
+                    <img src="images/indomie-kaldu.jpg" alt="Indomie Kaldu">
+                    <h3>Indomie Kuah Kaldu Ayam</h3>
+                    <p>Mie instan kuah kaldu ayam gurih dan menghangatkan.</p>
+                    <p class="price">Harga: Rp 10.000</p>
+                </div>
+                <div class="menu-card">
+                    <img src="images/indomie-kari.jpg" alt="Indomie Kari">
+                    <h3>Indomie Kari Ayam</h3>
+                    <p>Mie instan kuah kari ayam kental dan kaya rempah.</p>
+                    <p class="price">Harga: Rp 10.000</p>
+                </div>
+                <div class="menu-card">
+                    <img src="images/bakwan-goreng.jpg" alt="Bakwan Goreng">
+                    <h3>Bakwan Goreng</h3>
+                    <p>Gorengan sayur renyah, cocok sebagai pendamping mie siram atau camilan.</p>
+                    <p class="price">Harga: Rp 1.000</p>
+                </div>
+                <div class="menu-card">
+                    <img src="images/telur.jpg" alt="Telur">
+                    <h3>Telur</h3>
+                    <p>Tambahan protein sempurna untuk semua jenis mie.</p>
+                    <p class="price">Harga: Rp 3.000</p>
+                </div>
+                <div class="menu-card">
+                    <img src="images/pentolan-keju.jpg" alt="Pentolan Keju">
+                    <h3>Pentolan Keju</h3>
+                    <p>Bakso dengan isian keju lumer.</p>
+                    <p class="price">Harga: Rp 3.000</p>
+                </div>
+                <div class="menu-card">
+                    <img src="images/pentolan-ori.jpg" alt="Pentolan Original">
+                    <h3>Pentolan Original</h3>
+                    <p>Bakso daging sapi murni dengan bumbu gurih.</p>
+                    <p class="price">Harga: Rp 2.000</p>
+                </div>
+                <div class="menu-card">
+                    <img src="images/tahu-bakso.jpg" alt="Tahu Bakso">
+                    <h3>Tahu Bakso (2 pcs)</h3>
+                    <p>Tahu isi adonan bakso padat.</p>
+                    <p class="price">Harga: Rp 3.000</p>
+                </div>
+                <div class="menu-card">
+                    <img src="images/ketupat.jpg" alt="Ketupat">
+                    <h3>Ketupat</h3>
+                    <p>Nasi yang dimasak dalam anyaman janur. Tambahan sempurna untuk kuah.</p>
+                    <p class="price">Harga: Rp 2.000</p>
+                </div>
+                <div class="menu-card">
+                    <img src="images/ubi-goreng.jpg" alt="Ubi Goreng">
+                    <h3>Ubi Goreng</h3>
+                    <p>Ubi manis yang digoreng garing, cocok untuk camilan atau pendamping mie siram.</p>
+                    <p class="price">Harga: Rp 1.000</p>
+                </div>
+                <div class="menu-card">
+                    <img src="images/kacang.jpg" alt="Kacang Goreng">
+                    <h3>Kacang Goreng</h3>
+                    <p>Kacang tanah yang digoreng memberikan sensasi gurih dan tekstur kriuk, cocok sebagai pendamping mie siram.</p>
+                    <p class="price">Harga: Rp 2.000</p>
+                </div>
+            </div>
+            
+            <h2 style="margin-top: 50px;">☕ Menu Minuman </h2>
+            <div class="menu-items">
+                <div class="menu-card"> <img src="images/air-mineral.jpg" alt="Air Mineral">
+                    <h3>Air Mineral</h3>
+                    <p>Penyegar dahaga yang paling murni dan alami (600ml).</p>
+                    <p class="price">Harga: Rp 4.000</p>
+                </div>
+                <div class="menu-card"> <img src="images/es-teh.jpg" alt="Es Teh Manis">
+                    <h3>Es Teh Manis</h3>
+                    <p>Teh segar dengan tingkat kemanisan yang pas, disajikan dingin.</p>
+                    <p class="price">Harga: Rp 5.000</p>
+                </div>
+                </div>
+        </section>
+
+        <section id="flowcharts" class="multi-flow-section">
+            <h2>⚙️ Proses Operasional Inti Kami</h2>
+            <p class="flow-intro">Transparansi adalah kunci. Pelajari alur kerja kami mulai dari dapur hingga meja Anda.</p>
+            
+            <button class="toggle-button" data-target="flowcharts-content">Tampilkan Detail Flowchart</button>
+            
+            <div id="flowcharts-content" class="toggle-content toggle-content-hidden">
+                <div class="flow-grid">
+                    
+                    <div class="flow-card">
+                        <h3>1. Pemesanan Online</h3>
+                        <img src="images/flow-online.jpeg" alt="Flowchart Pemesanan Online" class="flowchart-image">
+                        <p class="flow-description">
+                            Flowchart ini merangkum proses pemesanan yang cepat dan efisien antara pelanggan dan penjual via WhatsApp.
+                            
+                            Tahapan Proses Inti:
+                            <ul>
+                            Pelanggan menghubungi penjual via WhatsApp, kemudian penjual memberikan daftar menu dan harga. Setelah itu pelanggan memilih menu jika menu tidak tersedia penjual memberi tahu dan memberikan rekomendasi lain.
+                            jika menu masih tersedia penjual meminta alamat pengantaran dan menyiapkan pesanan, lalu penjual mengonfirmasi pesanan dan menghubungi kurir untuk melakukan pengantaran, kemudian pesanan diterima oleh pelanggan.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    
+                    <div class="flow-card">
+                        <h3>2. Pemesanan Offline</h3>
+                        <img src="images/flow-offline.png" alt="Flowchart Pemesanan Offline" class="flowchart-image">
+                        <p class="flow-description">
+                            Flowchart ini menjelaskan proses pemesanan yang dilakukan secara langsung di lokasi Dapur Andara.
+                            
+                            Tahapan Proses Inti:
+                            <ul>
+                            Saat pelanggan memesan makanan, semuanya akan dicatat termasuk nama dan pesanan, lalu penjual melihat ketersediaan bahan. Jika tidak tersedia akan diinformasikan ke pelanggan lalu diberi rekomendasi menu lain. Apabila pelanggan setuju
+                            selanjutnya pesanan dicatat kembali dan diolah. Namun, jika bahan masih tersedia, penjual akan mengonfirmasi harga dan waktu proses penyajian, makanan pun diolah hingga diterima oleh pelanggan. Dilanjutkan dengan pelanggan melakukan pembayaran berupa tunai atau non-tunai, 
+                            jika tunai bayar langsung ke penjual sedangkan non-tunai membayar dengan QRIS dan masuk ke rekening penjual.
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="flow-card">
+                        <h3>3. Pelayanan di Tempat (Dine-In)</h3>
+                        <img src="images/flow-dinein.jpeg" alt="Flowchart Pelayanan Dine-In" class="flowchart-image">
+                        <p class="flow-description">
+                            Flowchart ini merinci alur pelayanan untuk pelanggan yang memilih untuk makan di tempat.
+                            
+                            Tahapan Proses Inti:
+                            <ul>
+                            Saat pelanggan datang penjual akan menyapa dan menanyakan apa yang akan dipesan. Ketika pelanggan memilih menu penjual akan mencatat pesanan,
+                            setelah dicatat akan langsung diolah yang dimana  ditambahkan siraman kuah atau toping. Penjual kembali mengecek pesanan, jika sudah lengkap maka akan disajikan ke meja pelanggan 
+                            apabila pesanan tidak lengkap akan dilengkapi kembali. Pelanggan pun makan di tempat dan melakukan pembayaran.
+                            </ul>
+                        </p>
+                    </div>
+                    
+                    <div class="flow-card">
+                        <h3>4. Pembelian Bahan Baku</h3>
+                        <img src="images/flow-bahanbaku.jpeg" alt="Flowchart Pembelian Bahan Baku" class="flowchart-image">
+                        <p class="flow-description">
+                            Flowchart ini memastikan ketersediaan dan kualitas bahan baku untuk menjaga cita rasa otentik Dapur Andara.
+                            
+                            Tahapan Proses Inti:
+                            <ul>
+                            Penjual melakukan pengecekan stok harian bahan baku inti (bumbu, mie, dsb). Kemudian jika stok lengkap maka penjual akan mengolah bahan baku, 
+                            sedangkan jika stok habis penjual akan menyiapkan daftar bahan dan pergi ke pasar atau supermarket untuk membeli. Pada saat melakukan pembelian penjual akan mengecek kualitas bahan baku
+                            jika bagus maka akan dibawa pulang dan diolah lalu jika tidak akan dibuang atau ditukar.        
+                            </ul>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </section>
+        
+        <section id="swot-analysis" class="swot-section">
+            <h2>🔎 Analisis SWOT Dapur Andara</h2>
+            <p class="swot-intro">Kami percaya pada evaluasi diri yang berkelanjutan. Berikut adalah ringkasan kekuatan, kelemahan, peluang, dan ancaman yang kami identifikasi:</p>
+
+            <div class="swot-grid">
+                <div class="swot-item strength">
+                    <h3>Kekuatan (Strength)</h3>
+                    <ul>
+                        <li>Produk unik dan berbeda (mie siram kuah coto) serta belum ada pesaing di wilayah Jl. Pancasila Utara.</li>
+                        <li>Harga sangat terjangkau (Rp 1.000 - Rp 10.000) sehingga dapat menjangkau semua kalangan.</li>
+                        <li>Proses penyajian cepat ( kurang lebih 2-3 menit) yang dapat meningkatkan kepuasan pelanggan.</li>
+                        <li>Menyediakan pembayaran tunai dan non-tunai (QRIS).</li>
+                        <li>Promosi aktif di media sosial yang terbukti efektif mendatangkan pelanggan.</li>
+                    </ul>
+                </div>
+                
+                <div class="swot-item weakness">
+                    <h3>Kelemahan (Weakness)</h3>
+                    <ul>
+                        <li>Belum bekerja sama dengan platform online seperti GrabFood dan GoFood.</li>
+                        <li>Tempat penjualan masih terbatas dan perlu diperluas.</li>
+                        <li>Sistem pemesanan online masih manual melalui WhatsApp.</li>
+                        <li>Keterbatasan jumlah karyawan, khususnya untuk pengelolaan pesanan online.</li>
+                    </ul>
+                </div>
+                
+                <div class="swot-item opportunity">
+                    <h3>Peluang (Opportunity)
+                    </h3>
+                    <ul>
+                        <li>Potensi kerja sama dengan layanan pesan antar online untuk menjangkau pasar lebih luas.</li>
+                        <li>Potensi pengembangan usaha melalui perluasan lokasi atau penambahan menu.</li>
+                        <li>Media sosial dapat terus dimaksimalkan sebagai sarana promosi.</li>
+                        <li>Kemudahan pembayaran non-tunai (QRIS) mendukung peningkatan transaksi, khususnya dari kalangan GenZ.</li>
+                        <li>Produk mie siram kuah coto yang unik memiliki potensi menjadi ciri khas kuliner daerah.</li>
+                    </ul>
+                </div>
+                
+                <div class="swot-item threat">
+                    <h3>Ancaman (Threat)
+                    </h3>
+                    <ul>
+                        <li>Ketika pesanan ramai (overload), berpotensi menurunkan kepuasan pelanggan jika waktu tunggu lama.</li>
+                        <li>Cuaca buruk yang dapat mengurangi jumlah pembeli.</li>
+                        <li>Munculnya pesaing baru dengan produk serupa.</li>
+                        <li>Fluktuasi harga dan ketersediaan bahan baku di pasar.</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="swot-intro">Berdasarkan analisis SWOT, UMKM Warung Dapur Andara menghadapi pain point utama berupa sistem pemesanan yang masih manual melalui WhatsApp, yang menyebabkan potensi kesalahan dan overload pesanan saat jam ramai. Selain itu, belum terintegrasinya platform online delivery membatasi jangkauan pasar dan pertumbuhan penjualan. Keterbatasan jumlah karyawan semakin memperburuk efisiensi operasional karena belum didukung oleh sistem digital, sehingga ketiadaan digitalisasi menjadi akar masalah utama.</p>
+
+        </section>
+        
+        <section id="roadmap" class="roadmap-section">
+            <h2>🧭 Peta Jalan Bisnis (Roadmap)</h2>
+            <p class="roadmap-intro">Langkah-langkah strategis yang akan ditempuh dalam beberapa tahun ke depan untuk Dapur Andara:</p>
+            
+            <button class="toggle-button" data-target="roadmap-content">Tampilkan Gambar Roadmap Bisnis</button>
+            
+            <div id="roadmap-content" class="toggle-content toggle-content-hidden">
+                 <img src="images/roadmap-large-image.jpg" alt="Roadmap Bisnis Dapur Andara" class="large-diagram-image">
+                <p>Diagram di atas menunjukkan milestone kunci dan target yang harus dicapai setiap tahunnya.</p>
+            </div>
+            
+            </section>
+        
+        <section id="kontak" class="contact-short">
+            <h2>📍 Kunjungi Kami</h2>
+            <p>Jl. Pancasila Utara No. 20, Kota Parepare</p>
+            
+            <p><a href="https://maps.google.com/?cid=1535902957888438263&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" style="color: #A0522D; text-decoration: underline;">Lihat Lokasi di Google Maps</a></p>
+            <p>Buka: Senin - Minggu, 09:00 - 22:00</p>
+            
+            <a href="https://wa.me/6281251612717?text=Halo%20Dapur%20Andara,%20saya%20ingin%20bertanya%20tentang%20menu." class="cta-button" target="_blank">Pesan via WhatsApp</a>
+        </section>
+
+        <section id="strategi" style="display:none;">
+  <h2></h2>
+  <img src="images/WhatsApp Image 2025-12-14 at 15.54.15_d3862d58.jpg" alt="Strategi Development">
+</section>
+
+<section id="aktivis" style="display:none;">
+  <h2></h2>
+  <img src="images/WhatsApp Image 2025-12-14 at 15.54.27_13d02d45.jpg" alt="Digital Business Value Activist">
+</section>
+
+
+    </main>
+
+    <footer>
+        <p>© 2025 Dapur Andara. Semua Hak Dilindungi.</p>
+        <div class="social-links">
+          |  <a href="https://www.instagram.com/dapurandara_20?igsh=MWRhMWE1NGg5aHVzbA==" target="_blank" rel="noopener noreferrer">IG</a> |
+        </div>
+    </footer> 
+
+    <script src="script.js"></script>
+</body>
+</html>
